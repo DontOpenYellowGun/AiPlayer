@@ -50,10 +50,10 @@ public class MainFragment extends BaseFragment {
         fragments.add(currentLocationFragment);
         fragments.add(recommendFragment);
 
-        tabTitle.addTab(tabTitle.newTab().setText("海淀"));
+        tabTitle.addTab(tabTitle.newTab().setText("杭州"));
         tabTitle.addTab(tabTitle.newTab().setText("推荐"));
 
-        pagerAdapter = new CommPagerAdapter(getChildFragmentManager(), fragments, new String[] {"海淀", "推荐"});
+        pagerAdapter = new CommPagerAdapter(getChildFragmentManager(), fragments, new String[] {"杭州", "推荐"});
         viewPager.setAdapter(pagerAdapter);
         tabTitle.setupWithViewPager(viewPager);
 
