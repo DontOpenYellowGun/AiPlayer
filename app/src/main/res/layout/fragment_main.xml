@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MainFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="直播"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="#cccccc"
+            android:padding="10dp"/>
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_title"
+            android:layout_width="160dp"
+            app:xTabIndicatorColor="@color/white"
+            app:xTabSelectedTextColor="@color/white"
+            app:xTabTextColor="#CCCCCC"
+            app:xTabTextBold="true"
+            app:xTabTextSize="18sp"
+            app:xTabIndicatorWidth="20dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/iv_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_mainmenu"
+            android:layout_width="match_parent"
+            app:xTabSelectedTextColor="@color/white"
+            app:xTabTextColor="#8F8F94"
+            app:xTabTextBold="true"
+            app:xTabTextSize="15sp"
+            app:xTabSelectedTextSize="16sp"
+            android:layout_height="50dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/ic_main_menu"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

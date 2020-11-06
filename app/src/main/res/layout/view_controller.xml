@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="120dp">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" @大致爱高清"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <com.wildeyess.player.utils.autolinktextview.AutoLinkTextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="只有 #允儿 的脸我才敢拉这么近"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            app:highlight_textcolor="@color/color_link"/>
+
+        <com.wildeyess.player.view.MarqueeTextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text=" @大致爱高清 创作的原生 - 大致爱高清"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="52dp"
+            android:layout_height="62dp">
+
+            <com.wildeyess.player.view.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                app:es_shape_type="round"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/iv_focus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="3dp"
+                android:src="@mipmap/add_focus"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.wildeyess.player.view.IconFontTextView
+                android:id="@+id/iv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="@string/icon_like_fill" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_anim"
+                android:layout_width="85dp"
+                android:layout_height="85dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_likecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="22.5w"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="-22dp"/>
+
+        <com.wildeyess.player.view.IconFontTextView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="@string/icon_comment"/>
+
+        <TextView
+            android:id="@+id/tv_commentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3823"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+        <com.wildeyess.player.view.IconFontTextView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:text="@string/icon_more"/>
+
+        <TextView
+            android:id="@+id/tv_sharecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3371"
+            android:textSize="12sp"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/iv_record"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@mipmap/ic_record" />
+
+            <com.wildeyess.player.view.CircleImageView
+                android:id="@+id/iv_head_anim"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:ease_radius="15dp"
+                app:es_shape_type="round"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

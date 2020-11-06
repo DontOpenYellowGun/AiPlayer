@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d1e1f</color>
+    <color name="colorPrimaryDark">#1d1e1f</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_bg_theme">#161924</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_FF0041">#ff2c54</color>
+    <color name="color_tag">#9B9B9B</color>
+    <color name="color_link">#FFDDA4</color>
+    <color name="color_00BC1B">#00BC1B</color>
+    <color name="light_gray">#fff5f5f5</color>
+
+    <color name="color_weibo_iconbg">#EF1200</color>
+    <color name="color_wechat_iconbg">#00BC1B</color>
+    <color name="color_qq_iconbg">#12B7F5</color>
+    <color name="color_qqzone_iconbg">#FF9F00</color>
+    <color name="color_more_iconbg">#256EB2</color>
+</resources>

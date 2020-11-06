@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PersonalHomeFragment"
+    android:background="@color/color_bg_theme">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_behavior=".utils.AppbarZoomBehavior">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                app:contentScrim="@color/color_bg_theme"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"/>
+
+                    <include layout="@layout/personal_home_header"/>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_return"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/return_white"
+                            android:background="@drawable/shape_circle_halfwhite"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="小橘子衣橱"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_focus"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_round_red"
+                            android:text="关注"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv_more"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone"
+                            android:gravity="center"/>
+
+                        <com.wildeyess.player.view.IconFontTextView
+                            android:id="@+id/iv_more"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="@string/icon_more"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_circle_halfwhite"/>
+
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:xTabIndicatorColor="#FF9F00"
+                app:xTabSelectedTextColor="@color/white"
+                app:xTabTextColor="#CCCCCC"
+                app:xTabIndicatorWidth="90dp"
+                app:xTabTextBold="true"
+                app:xTabTextSize="15sp"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
