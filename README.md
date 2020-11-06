@@ -5,7 +5,7 @@
 抖音，可以说目前最火的短视频APP！作为一名 Android 开发，是时候研究一下功能是如何实现的了！目前，也有一些其他的小伙伴实现都有播放的效果，只要是用 ViewPager 来实现的上下滑动。 今天，我们换个思路用我们最常用的控件，RecyclerView 来实现，下面先看看需要实现的功能。
 
 大概实现的效果如下
-![抖音，记录别人的美好生活](https://user-gold-cdn.xitu.io/2019/10/22/16df14a6cf3296fc?imageslim)
+![](https://user-gold-cdn.xitu.io/2019/10/22/16df14a6cf3296fc?imageslim)
 
 大致有以下几个功能。
 1. 上下滑动播放详情页
