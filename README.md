@@ -4,7 +4,7 @@
 
 大概实现的效果如下
 - 全屏切换播放效果用的是Recycler加PagerSnapHelper控制。
-![](https://user-gold-cdn.xitu.io/2019/10/22/16df14a6cf3296fc?imageslim)
+![](https://upload-images.jianshu.io/upload_images/8669504-e0830fc715f87cb2.gif?imageMogr2/auto-orient/strip)
 
 大致有以下几个功能。
 1. 上下滑动播放详情页
