@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.wildeyess.player.R;
 import com.wildeyess.player.view.adapter.CommentAdapter;
-import com.wildeyess.player.bean.CommentBean;
-import com.wildeyess.player.bean.DataCreate;
+import com.wildeyess.player.model.bean.CommentBean;
+import com.wildeyess.player.model.bean.DataCreate;
 
 import java.util.ArrayList;
 

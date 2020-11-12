@@ -8,7 +8,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.wildeyess.player.R;
 import com.wildeyess.player.view.adapter.GridVideoAdapter;
 import com.wildeyess.player.base.BaseFragment;
-import com.wildeyess.player.bean.DataCreate;
+import com.wildeyess.player.model.bean.DataCreate;
 
 import butterknife.BindView;
 

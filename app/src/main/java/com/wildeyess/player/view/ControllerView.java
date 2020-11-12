@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
 import com.wildeyess.player.R;
-import com.wildeyess.player.bean.VideoBean;
+import com.wildeyess.player.model.bean.VideoBean;
 import com.wildeyess.player.utils.AutoLinkHerfManager;
 import com.wildeyess.player.utils.NumUtils;
 import com.wildeyess.player.utils.OnVideoControllerListener;

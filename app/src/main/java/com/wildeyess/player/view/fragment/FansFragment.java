@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.wildeyess.player.R;
 import com.wildeyess.player.view.adapter.FansAdapter;
 import com.wildeyess.player.base.BaseFragment;
-import com.wildeyess.player.bean.DataCreate;
+import com.wildeyess.player.model.bean.DataCreate;
 import butterknife.BindView;
 
 public class FansFragment extends BaseFragment {

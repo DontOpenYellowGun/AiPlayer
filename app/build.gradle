@@ -1,20 +1,67 @@
 apply plugin: 'com.android.application'
 
+static def releaseTime() {
+    return new Date().format("yyyy-MM-dd_hh-mm-ss", TimeZone.getTimeZone("GMT+08:00"))
+}
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+
+    signingConfigs {
+        releaseSign {
+            keyAlias keystoreProperties["keyAliasRelease"]
+            keyPassword keystoreProperties["keyPasswordRelease"]
+            storeFile file(keystoreProperties['storeFileRelease'])
+            storePassword keystoreProperties["storePasswordRelease"]
+        }
+        debugSign {
+            keyAlias keystoreProperties["keyAliasRelease"]
+            keyPassword keystoreProperties["keyPasswordRelease"]
+            storeFile file(keystoreProperties['storeFileRelease'])
+            storePassword keystoreProperties["storePasswordRelease"]
+        }
+    }
+
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_tools
     defaultConfig {
         applicationId "com.wildeyess.player"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+/*, "x86", "x86_64"*//*, "arm64-v8a", "x86", "x86_64", "mips", "mips64"*/
+        }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        develop {}
+        check {}
+        product {}
+        productFlavors.all { flavor ->
+            flavor.dimension = "default"
+            flavor.manifestPlaceholders = [
+                                           app_name_launcher  : "AiPlayer",
+                                           app_icon           : "@drawable/icon_product"
+            ]
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "player_${defaultConfig.versionName}_${variant.flavorName}_${variant.buildType.name}_${releaseTime()}.apk"
+                }
+            }
         }
     }
 
@@ -31,22 +78,23 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
 
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
-    implementation 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
 
-    implementation "com.google.android.material:material:1.0.0"
+    implementation "com.google.android.material:material:1.2.1"
 
+    //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
 
     implementation 'com.androidkun:XTabLayout:1.1.4'
@@ -55,9 +103,5 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:2.8.0'
 
-//    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-//    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.0.0'
-//    implementation 'androidx.lifecycle:lifecycle-livedata:2.0.0'
-//    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:3.2.0'
-//    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:3.2.0'
+
 }

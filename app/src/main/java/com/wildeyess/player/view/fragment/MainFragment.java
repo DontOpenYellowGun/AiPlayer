@@ -7,7 +7,7 @@ import com.androidkun.xtablayout.XTabLayout;
 import com.wildeyess.player.R;
 import com.wildeyess.player.base.BaseFragment;
 import com.wildeyess.player.base.CommPagerAdapter;
-import com.wildeyess.player.bean.PauseVideoEvent;
+import com.wildeyess.player.model.bean.PauseVideoEvent;
 import com.wildeyess.player.utils.RxBus;
 import java.util.ArrayList;
 

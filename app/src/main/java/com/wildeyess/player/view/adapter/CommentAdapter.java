@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import com.wildeyess.player.R;
 import com.wildeyess.player.base.BaseRvAdapter;
 import com.wildeyess.player.base.BaseRvViewHolder;
-import com.wildeyess.player.bean.CommentBean;
+import com.wildeyess.player.model.bean.CommentBean;
 import com.wildeyess.player.utils.NumUtils;
 import com.wildeyess.player.view.CircleImageView;
 import java.util.List;

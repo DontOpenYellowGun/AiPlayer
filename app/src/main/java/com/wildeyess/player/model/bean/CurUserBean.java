@@ -1,4 +1,4 @@
-package com.wildeyess.player.bean;
+package com.wildeyess.player.model.bean;
 
 /**
  * create by wildeyess

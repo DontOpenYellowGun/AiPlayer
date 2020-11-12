@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import com.wildeyess.player.R;
 import com.wildeyess.player.base.BaseRvAdapter;
 import com.wildeyess.player.base.BaseRvViewHolder;
-import com.wildeyess.player.bean.VideoBean;
+import com.wildeyess.player.model.bean.VideoBean;
 
 import java.util.List;
 

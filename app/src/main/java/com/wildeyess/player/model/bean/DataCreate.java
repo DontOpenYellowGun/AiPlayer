@@ -1,4 +1,4 @@
-package com.wildeyess.player.bean;
+package com.wildeyess.player.model.bean;
 
 import com.wildeyess.player.R;
 import java.util.ArrayList;
