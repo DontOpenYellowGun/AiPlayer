@@ -1,4 +1,4 @@
-package com.wildeyess.player.fragment;
+package com.wildeyess.player.view.fragment;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
@@ -50,10 +50,10 @@ public class MainFragment extends BaseFragment {
         fragments.add(currentLocationFragment);
         fragments.add(recommendFragment);
 
-        tabTitle.addTab(tabTitle.newTab().setText("杭州"));
+        tabTitle.addTab(tabTitle.newTab().setText("重庆"));
         tabTitle.addTab(tabTitle.newTab().setText("推荐"));
 
-        pagerAdapter = new CommPagerAdapter(getChildFragmentManager(), fragments, new String[] {"杭州", "推荐"});
+        pagerAdapter = new CommPagerAdapter(getChildFragmentManager(), fragments, new String[] {"重庆", "推荐"});
         viewPager.setAdapter(pagerAdapter);
         tabTitle.setupWithViewPager(viewPager);
 

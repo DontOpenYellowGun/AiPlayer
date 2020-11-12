@@ -1,4 +1,4 @@
-package com.wildeyess.player.activity;
+package com.wildeyess.player.view.activity;
 
 import android.widget.Toast;
 
@@ -9,8 +9,8 @@ import com.wildeyess.player.base.BaseActivity;
 import com.wildeyess.player.base.CommPagerAdapter;
 import com.wildeyess.player.bean.MainPageChangeEvent;
 import com.wildeyess.player.bean.PauseVideoEvent;
-import com.wildeyess.player.fragment.MainFragment;
-import com.wildeyess.player.fragment.PersonalHomeFragment;
+import com.wildeyess.player.view.fragment.MainFragment;
+import com.wildeyess.player.view.fragment.PersonalHomeFragment;
 import com.wildeyess.player.utils.RxBus;
 import java.util.ArrayList;
 import butterknife.BindView;

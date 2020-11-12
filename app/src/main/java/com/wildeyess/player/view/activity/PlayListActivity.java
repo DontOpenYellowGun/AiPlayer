@@ -1,8 +1,8 @@
-package com.wildeyess.player.activity;
+package com.wildeyess.player.view.activity;
 
 import com.wildeyess.player.R;
 import com.wildeyess.player.base.BaseActivity;
-import com.wildeyess.player.fragment.RecommendFragment;
+import com.wildeyess.player.view.fragment.RecommendFragment;
 
 /**
  * create by wildeyess

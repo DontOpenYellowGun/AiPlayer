@@ -1,4 +1,4 @@
-package com.wildeyess.player.adapter;
+package com.wildeyess.player.view.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

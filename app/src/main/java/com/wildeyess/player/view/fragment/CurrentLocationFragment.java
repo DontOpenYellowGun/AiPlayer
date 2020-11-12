@@ -1,4 +1,4 @@
-package com.wildeyess.player.fragment;
+package com.wildeyess.player.view.fragment;
 
 import android.os.CountDownTimer;
 
@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.wildeyess.player.R;
-import com.wildeyess.player.adapter.GridVideoAdapter;
+import com.wildeyess.player.view.adapter.GridVideoAdapter;
 import com.wildeyess.player.base.BaseFragment;
 import com.wildeyess.player.bean.DataCreate;
 

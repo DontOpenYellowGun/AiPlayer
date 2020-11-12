@@ -1,4 +1,4 @@
-package com.wildeyess.player.adapter;
+package com.wildeyess.player.view.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import com.wildeyess.player.R;
-import com.wildeyess.player.activity.PlayListActivity;
+import com.wildeyess.player.view.activity.PlayListActivity;
 import com.wildeyess.player.base.BaseRvAdapter;
 import com.wildeyess.player.base.BaseRvViewHolder;
 import com.wildeyess.player.bean.VideoBean;

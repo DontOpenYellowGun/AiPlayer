@@ -1,4 +1,4 @@
-package com.wildeyess.player.fragment;
+package com.wildeyess.player.view.fragment;
 
 import android.content.Intent;
 import android.view.View;
@@ -16,8 +16,8 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.androidkun.xtablayout.XTabLayout;
 import com.wildeyess.player.R;
-import com.wildeyess.player.activity.FocusActivity;
-import com.wildeyess.player.activity.ShowImageActivity;
+import com.wildeyess.player.view.activity.FocusActivity;
+import com.wildeyess.player.view.activity.ShowImageActivity;
 import com.wildeyess.player.base.BaseFragment;
 import com.wildeyess.player.base.CommPagerAdapter;
 import com.wildeyess.player.bean.CurUserBean;

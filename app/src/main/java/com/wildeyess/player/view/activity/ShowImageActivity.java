@@ -1,4 +1,4 @@
-package com.wildeyess.player.activity;
+package com.wildeyess.player.view.activity;
 
 import android.widget.ImageView;
 import com.wildeyess.player.R;

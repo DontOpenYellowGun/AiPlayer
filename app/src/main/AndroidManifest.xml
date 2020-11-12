@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.wildeyess.player.activity.SplashActivity"
+            android:name="com.wildeyess.player.view.activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,16 +25,16 @@
         </activity>
 
         <activity
-            android:name="com.wildeyess.player.activity.MainActivity"
+            android:name="com.wildeyess.player.view.activity.MainActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.wildeyess.player.activity.FocusActivity"
+        <activity android:name="com.wildeyess.player.view.activity.FocusActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.wildeyess.player.activity.PlayListActivity"
+        <activity android:name="com.wildeyess.player.view.activity.PlayListActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.wildeyess.player.activity.ShowImageActivity"
+        <activity android:name="com.wildeyess.player.view.activity.ShowImageActivity"
             android:screenOrientation="portrait" />
 
     </application>

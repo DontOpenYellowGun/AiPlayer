@@ -1,4 +1,4 @@
-package com.wildeyess.player.activity;
+package com.wildeyess.player.view.activity;
 
 import android.content.Intent;
 import android.os.CountDownTimer;

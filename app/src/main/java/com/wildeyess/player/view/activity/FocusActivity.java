@@ -1,4 +1,4 @@
-package com.wildeyess.player.activity;
+package com.wildeyess.player.view.activity;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
@@ -7,7 +7,7 @@ import com.androidkun.xtablayout.XTabLayout;
 import com.wildeyess.player.R;
 import com.wildeyess.player.base.BaseActivity;
 import com.wildeyess.player.base.CommPagerAdapter;
-import com.wildeyess.player.fragment.FansFragment;
+import com.wildeyess.player.view.fragment.FansFragment;
 import java.util.ArrayList;
 
 import butterknife.BindView;

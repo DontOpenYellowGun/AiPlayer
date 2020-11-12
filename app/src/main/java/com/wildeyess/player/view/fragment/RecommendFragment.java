@@ -1,4 +1,4 @@
-package com.wildeyess.player.fragment;
+package com.wildeyess.player.view.fragment;
 
 import android.os.CountDownTimer;
 import android.view.View;
@@ -7,9 +7,9 @@ import android.widget.ImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.wildeyess.player.R;
-import com.wildeyess.player.activity.MainActivity;
-import com.wildeyess.player.activity.PlayListActivity;
-import com.wildeyess.player.adapter.VideoAdapter;
+import com.wildeyess.player.view.activity.MainActivity;
+import com.wildeyess.player.view.activity.PlayListActivity;
+import com.wildeyess.player.view.adapter.VideoAdapter;
 import com.wildeyess.player.base.BaseFragment;
 import com.wildeyess.player.bean.CurUserBean;
 import com.wildeyess.player.bean.DataCreate;

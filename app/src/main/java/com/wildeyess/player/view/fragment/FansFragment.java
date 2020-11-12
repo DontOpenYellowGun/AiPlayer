@@ -1,9 +1,9 @@
-package com.wildeyess.player.fragment;
+package com.wildeyess.player.view.fragment;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.wildeyess.player.R;
-import com.wildeyess.player.adapter.FansAdapter;
+import com.wildeyess.player.view.adapter.FansAdapter;
 import com.wildeyess.player.base.BaseFragment;
 import com.wildeyess.player.bean.DataCreate;
 import butterknife.BindView;
