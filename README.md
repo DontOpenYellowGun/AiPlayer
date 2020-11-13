@@ -5,12 +5,12 @@
 ![](https://github.com/wildeyess/AiPlayer/blob/master/describe.gif?raw=true)
 
 ##技术点：
-1.Recycler加PagerSnapHelper
-2.airbnb的开源项目lottie加载json动画，json动画由VUE制作，实现红心效果
-3.CoordinatorLayout+AppBarLayout折叠布局
-4.BottomSheetDialogFragment实现评论上拉框
-5.头像平滑过渡通过5.0共享元素动画实现
-6.话题#颜色可点击通过spannedstring实现
+- 1.Recycler加PagerSnapHelper
+- 2.airbnb的开源项目lottie加载json动画，json动画由VUE制作，实现红心效果
+- 3.CoordinatorLayout+AppBarLayout折叠布局
+- 4.BottomSheetDialogFragment实现评论上拉框
+- 5.头像平滑过渡通过5.0共享元素动画实现
+- 6.话题#颜色可点击通过spannedstring实现
 
 ##原理解析：
 ###PagerSnapHelper
