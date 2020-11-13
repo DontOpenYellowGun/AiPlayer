@@ -16,20 +16,20 @@ public class DataCreate {
 
         VideoBean videoBeanOne = new VideoBean();
         videoBeanOne.setCoverRes(R.mipmap.cover1);
-        videoBeanOne.setContent("#街坊 #颜值打分 给自己颜值打100分的女生集合");
+        videoBeanOne.setContent("#宠物 论气质这块，输过谁");
         videoBeanOne.setVideoRes(R.raw.video1);
         videoBeanOne.setDistance(7.9f);
         videoBeanOne.setFocused(false);
         videoBeanOne.setLiked(true);
-        videoBeanOne.setLikeCount(226823);
+        videoBeanOne.setLikeCount(123823);
         videoBeanOne.setCommentCount(3480);
         videoBeanOne.setShareCount(4252);
 
         VideoBean.UserBean userBeanOne = new VideoBean.UserBean();
         userBeanOne.setUid(1);
         userBeanOne.setHead(R.mipmap.head1);
-        userBeanOne.setNickName("南京街坊");
-        userBeanOne.setSign("你们喜欢的话题，就是我们采访的内容");
+        userBeanOne.setNickName("EA7-花臂King");
+        userBeanOne.setSign("放荡不羁爱自由");
         userBeanOne.setSubCount(119323);
         userBeanOne.setFocusCount(482);
         userBeanOne.setFansCount(32823);
@@ -42,20 +42,20 @@ public class DataCreate {
 
         VideoBean videoBeanTwo = new VideoBean();
         videoBeanTwo.setCoverRes(R.mipmap.cover2);
-        videoBeanTwo.setContent("400 户摊主开进济南环联夜市，你们要的烟火气终于来了！");
+        videoBeanTwo.setContent("一听就是刚换的引擎...");
         videoBeanTwo.setVideoRes(R.raw.video2);
         videoBeanTwo.setDistance(19.7f);
         videoBeanTwo.setFocused(true);
         videoBeanTwo.setLiked(false);
-        videoBeanTwo.setLikeCount(1938230);
+        videoBeanTwo.setLikeCount(55001);
         videoBeanTwo.setCommentCount(8923);
         videoBeanTwo.setShareCount(5892);
 
         VideoBean.UserBean userBeanTwo = new VideoBean.UserBean();
         userBeanTwo.setUid(2);
         userBeanTwo.setHead( R.mipmap.head2);
-        userBeanTwo.setNickName("民生直通车");
-        userBeanTwo.setSign("直通现场新闻，直击社会热点，深入事件背后，探寻事实真相");
+        userBeanTwo.setNickName("行走的果皮箱");
+        userBeanTwo.setSign("你正常吗？我不正常HHH");
         userBeanTwo.setSubCount(20323234);
         userBeanTwo.setFocusCount(244);
         userBeanTwo.setFansCount(1938232);
@@ -68,20 +68,20 @@ public class DataCreate {
 
         VideoBean videoBeanThree = new VideoBean();
         videoBeanThree.setCoverRes(R.mipmap.cover3);
-        videoBeanThree.setContent("科比生涯霸气庆祝动作，最后动作诠释了一生荣耀 #科比 @路人王篮球 ");
+        videoBeanThree.setContent("这是我住过一年的地方，有雪山，有星空，早上刷着牙看着日照金山，下雪了可以跟朋友打雪仗，冷了就烤火。 #带你看雪");
         videoBeanThree.setVideoRes(R.raw.video3);
         videoBeanThree.setDistance(15.9f);
         videoBeanThree.setFocused(false);
         videoBeanThree.setLiked(false);
-        videoBeanThree.setLikeCount(592032);
-        videoBeanThree.setCommentCount(9221);
-        videoBeanThree.setShareCount(982);
+        videoBeanThree.setLikeCount(2288);
+        videoBeanThree.setCommentCount(141);
+        videoBeanThree.setShareCount(22);
 
         VideoBean.UserBean userBeanThree = new VideoBean.UserBean();
         userBeanThree.setUid(3);
         userBeanThree.setHead(R.mipmap.head3);
-        userBeanThree.setNickName("七叶篮球");
-        userBeanThree.setSign("老科的视频会一直保留，想他了就回来看看");
+        userBeanThree.setNickName("尼尔森");
+        userBeanThree.setSign("15年开始独自旅行，后来干脆把兴趣当做职业");
         userBeanThree.setSubCount(1039232);
         userBeanThree.setFocusCount(159);
         userBeanThree.setFansCount(29232323);
